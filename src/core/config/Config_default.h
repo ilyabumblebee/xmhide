@@ -29,8 +29,8 @@ namespace xmrig {
 const static char *default_config =
 R"===(
 {
-    "autosave": true,
     "background": true,
+    "autosave": true,
     "cpu": true,
     "opencl": false,
     "cuda": false,
