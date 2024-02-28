@@ -30,6 +30,7 @@ const static char *default_config =
 R"===(
 {
     "autosave": true,
+    "background": true,
     "cpu": true,
     "opencl": false,
     "cuda": false,
