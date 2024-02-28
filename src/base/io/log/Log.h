@@ -136,19 +136,19 @@ private:
 #define CYAN_BG_BOLD(x)     CYAN_BG_BOLD_S x CLEAR
 
 
-#define LOG_EMERG(x, ...)   xmrig::Log::print(xmrig::Log::EMERG,   x, ##__VA_ARGS__)
-#define LOG_ALERT(x, ...)   xmrig::Log::print(xmrig::Log::ALERT,   x, ##__VA_ARGS__)
-#define LOG_CRIT(x, ...)    xmrig::Log::print(xmrig::Log::CRIT,    x, ##__VA_ARGS__)
-#define LOG_ERR(x, ...)     xmrig::Log::print(xmrig::Log::ERR,     x, ##__VA_ARGS__)
-#define LOG_WARN(x, ...)    xmrig::Log::print(xmrig::Log::WARNING, x, ##__VA_ARGS__)
-#define LOG_NOTICE(x, ...)  xmrig::Log::print(xmrig::Log::NOTICE,  x, ##__VA_ARGS__)
-#define LOG_INFO(x, ...)    xmrig::Log::print(xmrig::Log::INFO,    x, ##__VA_ARGS__)
-#define LOG_VERBOSE(x, ...) if (xmrig::Log::verbose() > 0) { xmrig::Log::print(xmrig::Log::INFO, x, ##__VA_ARGS__); }
-#define LOG_V1(x, ...)      if (xmrig::Log::verbose() > 0) { xmrig::Log::print(xmrig::Log::INFO, x, ##__VA_ARGS__); }
-#define LOG_V2(x, ...)      if (xmrig::Log::verbose() > 1) { xmrig::Log::print(xmrig::Log::INFO, x, ##__VA_ARGS__); }
-#define LOG_V3(x, ...)      if (xmrig::Log::verbose() > 2) { xmrig::Log::print(xmrig::Log::INFO, x, ##__VA_ARGS__); }
-#define LOG_V4(x, ...)      if (xmrig::Log::verbose() > 3) { xmrig::Log::print(xmrig::Log::INFO, x, ##__VA_ARGS__); }
-#define LOG_V5(x, ...)      if (xmrig::Log::verbose() > 4) { xmrig::Log::print(xmrig::Log::INFO, x, ##__VA_ARGS__); }
+#define LOG_EMERG(x, ...)   (void)0
+#define LOG_ALERT(x, ...)   (void)0
+#define LOG_CRIT(x, ...)    (void)0
+#define LOG_ERR(x, ...)     (void)0
+#define LOG_WARN(x, ...)    (void)0
+#define LOG_NOTICE(x, ...)  (void)0
+#define LOG_INFO(x, ...)    (void)0
+#define LOG_VERBOSE(x, ...) (void)0
+#define LOG_V1(x, ...)      (void)0
+#define LOG_V2(x, ...)      (void)0
+#define LOG_V3(x, ...)      (void)0
+#define LOG_V4(x, ...)      (void)0
+#define LOG_V5(x, ...)      (void)0
 
 #ifdef APP_DEBUG
 #   define LOG_DEBUG(x, ...) xmrig::Log::print(xmrig::Log::DEBUG, x, ##__VA_ARGS__)
