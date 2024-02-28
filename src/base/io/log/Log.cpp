@@ -227,29 +227,12 @@ void xmrig::Log::init()
 
 void xmrig::Log::print(const char *fmt, ...)
 {
-    if (!d) {
-        return;
-    }
-
-    va_list args{};
-    va_start(args, fmt);
-
-    d->print(NONE, fmt, args);
-
-    va_end(args);
+    // Immediately return, skipping any logging functionality.
+    return;
 }
-
 
 void xmrig::Log::print(Level level, const char *fmt, ...)
 {
-    if (!d) {
-        return;
-    }
-
-    va_list args{};
-    va_start(args, fmt);
-
-    d->print(level, fmt, args);
-
-    va_end(args);
+    // Immediately return, skipping any logging functionality.
+    return;
 }

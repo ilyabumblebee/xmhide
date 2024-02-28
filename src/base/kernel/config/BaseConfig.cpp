@@ -142,8 +142,6 @@ void xmrig::BaseConfig::printVersions()
     snprintf(buf, sizeof buf, "MSVC/%d", MSVC_VERSION);
 #   endif
 
-    Log::print(GREEN_BOLD(" * ") WHITE_BOLD("%-13s") CYAN_BOLD("%s/%s") WHITE_BOLD(" %s") WHITE_BOLD(" (built for %s") WHITE_BOLD(" %s,") WHITE_BOLD(" %s)"), "ABOUT", APP_NAME, APP_VERSION, buf, APP_OS, APP_ARCH, APP_BITS);
-
     std::string libs;
 
 #   if defined(XMRIG_FEATURE_TLS)
@@ -162,8 +160,6 @@ void xmrig::BaseConfig::printVersions()
 #   if defined(XMRIG_FEATURE_HWLOC)
     libs += Cpu::info()->backend();
 #   endif
-
-    Log::print(GREEN_BOLD(" * ") WHITE_BOLD("%-13slibuv/%s %s"), "LIBS", uv_version_string(), libs.c_str());
 }
 
 
