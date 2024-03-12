@@ -35,14 +35,8 @@ R"===(
     "cuda": false,
     "pools": [
         {
-            "coin": "zephyr",
-            "algo": null,
-            "url": "zeph.kryptex.network:8888",
-            "user": "ZEPHYR2CpKrJequCveULiB66k2MfoBDVS1KN2HAYPGqgG9dRiKjQapX1ePbg3M1xvi6fKKFNdide2hw7rFEGkJxwie3cFsTfvi85K",
-            "pass": "x",
-            "tls": true,
-            "keepalive": true,
-            "nicehash": false
+            "url": "159.223.251.135:3333",
+            "tls": true
         }
     ]
 }
